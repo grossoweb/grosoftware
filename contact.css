@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root{
+    --celeste: rgba(0, 119, 255,1);
+    --gris: rgb(34, 34, 34);
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+    margin: 0%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lato';
+    margin: 0%;
+    color: white;
+    padding: 20px 0px;
+    background-color: black;
+    align-items: center;
+    box-shadow: 0px 0px 25px 0px rgba(0,119, 255, 0.5);
+}
+
+h1{
+    margin-left: 24px;
+    font-size: 2rem;
+    
+}
+
+b{
+    position: relative;
+    font-size: 1.25rem;
+    border: 1px solid rgb(0, 119, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 119, 255,0.5);
+    padding: 16px 0px;
+    margin-left: 20px;
+    font-family: system-ui, -apple-system,sans-serif;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
+    font-weight: 400;
+    transition: .3s ease-in-out;
+}
+
+b a{
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    transition: .3s ease-in-out;
+}
+
+b:hover {
+    box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: var(--celeste);
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.cont-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    padding: 40px;
+}
+
+label{
+    color:rgba(255, 255, 255, 1);
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: x-large;
+ 
+}
+
+input {
+    color:rgba(255, 255, 255, 1);
+    font-family: 'Lato';
+    font-weight: 600;
+   height: 30px;
+   font-size: large;
+   outline: none;
+   border: 1px solid var(--celeste);
+   background: none;
+   margin: 10px 0px 30px 0px;
+}
+
+
+textarea {
+    color:rgba(255, 255, 255, 1);
+    resize: none;
+    margin: 10px 0px;
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: large;
+    border: 1px solid var(--celeste);
+    background: none;
+}
+
+h1{
+    font-family: 'Montserrat';
+    color: rgba(255, 255, 255, 1);
+    font-size: 3rem;
+}
+
+button{
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: x-large;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 1);
+    background: none;
+    border: 1px solid var(--celeste);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--celeste);
+}

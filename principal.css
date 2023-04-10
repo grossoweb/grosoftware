@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+:root{
+    --celeste: rgba(0, 119, 255,1);
+    --gris: rgb(34, 34, 34);
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+    margin: 0%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lato';
+    margin: 0%;
+    color: white;
+    padding: 20px 0px;
+    background-color: black;
+    align-items: center;
+    box-shadow: 0px 0px 25px 0px rgba(0,119, 255, 0.5);
+}
+
+h1{
+    margin-left: 24px;
+    font-size: 2rem;
+    
+}
+
+b{
+    position: relative;
+    font-size: 1.25rem;
+    border: 1px solid rgb(0, 119, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 119, 255,0.5);
+    padding: 16px 0px;
+    margin-left: 20px;
+    font-family: system-ui, -apple-system,sans-serif;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
+    font-weight: 400;
+    transition: .3s ease-in-out;
+}
+
+b a{
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    transition: .3s ease-in-out;
+}
+
+b:hover {
+    box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: var(--celeste);
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+}
+
+.right div a i{
+    font-size: 2rem;
+    filter:drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.75));
+}
+
+.right div a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 16px;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: calc(100vh - 132px);
+}
+
+.card {
+    width: 300px;
+    height: fit-content;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(36, 34, 56, 1);
+    padding-top: 5px;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;   
+    transition: .3s ease-in-out;
+}
+
+.card img {
+    width: 250px;
+    margin-top: 20px;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.5));
+    transition: .3s ease-in-out;
+}
+.card div {
+    width: 98%;
+    background-color: rgba(36, 34, 56, 0);
+    height: 0%;
+    position: absolute;     
+    left: 0%;
+    top: 0%;
+    transition: .3s ease-in-out;
+}
+
+.card p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: fit-content;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin: 20px 0px 0px 0px;
+    padding: 20px 0px;
+    border-radius: 0px 0px 10px 10px;
+    transition: .3s ease-in-out;
+    z-index: 1;
+}
+
+.card:hover div{
+    border-radius: 10px;
+    height: 98.5%;
+    box-shadow: 0px 0px 15px 0px rgba(59, 149, 177, 0.5);
+    background: rgb(255,255,255);
+}
+
+.card:hover p{
+   color: rgb(0, 0, 0);
+}
+
+.card:hover img{
+    width: 200px;
+}
